@@ -2,10 +2,12 @@ import java.util.*;
 
 // Credits to: chrsct | Christian Talurong 
 // source: https://github.com/chrsct/dechar
+
 public class dechar {
     Scanner scan = new Scanner(System.in);
 
     static void Header() {
+        System.out.print("\033[H\033[2J");
         System.out.println("=============================");
         System.out.println("DECHAR - CHARACTER TO DECIMAL");
         System.out.println("=============================");
@@ -27,7 +29,10 @@ public class dechar {
                 try {
                     System.out.print("\033[H\033[2J");
                     System.out.flush();
-                    n.CharConverter();
+                    boolean _trigger = false;
+                    if (!_trigger) {
+                         n.CharConverter();
+                    }
                 } catch(Exception e) {}
                 break;
             case "2":
