@@ -1,9 +1,10 @@
 import java.util.*;
+import converters.Charcon;
 
 // Credits to: chrsct | Christian Talurong 
 // source: https://github.com/chrsct/dechar
 
-public class dechar {
+public class App {
     Scanner scan = new Scanner(System.in);
 
     static void Header() {
@@ -15,8 +16,8 @@ public class dechar {
     }
 
     static void MainMechanics() {
-        charcon n = new charcon();
-        dechar a = new dechar();
+        Charcon n = new Charcon();
+        App a = new App();
         Header();
         System.out.println("Choose a program:");
         System.out.println("1. CHARACTER -> DECIMAL");
@@ -53,7 +54,7 @@ public class dechar {
         }
     }
 
-    public static void main(String[] args) {
+    void main() {
         MainMechanics();
     }
 }
